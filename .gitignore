@@ -399,3 +399,32 @@ FodyWeavers.xsd
 .idea/*
 
 .editorconfig
+# ---------------------------------------------------------------
+# Monorepo: web (Node/Vite)
+# ---------------------------------------------------------------
+node_modules/
+dist/
+.vite/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Firebase
+.firebase/
+firebase-debug.log*
+firestore-debug.log*
+ui-debug.log*
+database-debug.log*
+pubsub-debug.log*
+
+# Secrets
+.env
+.env.*
+!.env.example
+*service-account*.json
+*-firebase-adminsdk-*.json
+
+# OS
+.DS_Store
+Thumbs.db
